@@ -3,7 +3,7 @@
 }
 
 .u-section-1 .u-post-details-1 {
-  min-height: 375px;
+  min-height: 784px;
   margin-top: 60px;
   margin-bottom: -10px;
 }
@@ -26,9 +26,7 @@
 }
 
 .u-section-1 .u-metadata-1 {
-  margin-top: 30px;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 30px auto 0 0;
 }
 
 .u-section-1 .u-text-2 {

@@ -1,16 +1,16 @@
 .u-section-1 .u-sheet-1 {
-  min-height: 760px;
+  min-height: 829px;
 }
 
 .u-section-1 .u-blog-1 {
-  margin-bottom: 53px;
-  margin-top: 7px;
+  margin-bottom: 49px;
+  margin-top: 0;
 }
 
 .u-section-1 .u-repeater-1 {
   grid-auto-columns: calc(33.3333% - 6.66667px);
   grid-template-columns: repeat(3, calc(33.3333% - 6.66667px));
-  min-height: 700px;
+  min-height: 780px;
   grid-gap: 10px;
 }
 
@@ -19,77 +19,46 @@
 }
 
 .u-section-1 .u-text-1 {
-  margin: 20px 0 0;
+  margin-top: 20px;
 }
 
 .u-section-1 .u-image-1 {
-  height: 136px;
-  margin: 23px 0 0;
+  height: 140px;
+  margin-top: 20px;
 }
 
 .u-section-1 .u-text-2 {
-  margin: 20px 0 0;
+  margin-bottom: 0;
 }
 
-.u-section-1 .u-container-layout-2 {
-  padding: 30px;
+.u-section-1 .u-post-tags-1 {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
-.u-section-1 .u-text-3 {
-  margin: 20px 0 0;
+.u-section-1 .u-btn-1 {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
-.u-section-1 .u-image-2 {
-  height: 136px;
-  margin: 23px 0 0;
-}
-
-.u-section-1 .u-text-4 {
-  margin: 20px 0 0;
-}
-
-.u-section-1 .u-container-layout-3 {
-  padding: 30px;
-}
-
-.u-section-1 .u-text-5 {
-  margin: 20px 0 0;
-}
-
-.u-section-1 .u-image-3 {
-  height: 136px;
-  margin: 23px 0 0;
-}
-
-.u-section-1 .u-text-6 {
-  margin: 20px 0 0;
+.u-section-1 .u-metadata-1 {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1199px) {
   .u-section-1 .u-repeater-1 {
-    min-height: 375px;
-  }
-
-  .u-section-1 .u-image-1 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-1 .u-image-2 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-1 .u-image-3 {
-    margin-right: initial;
-    margin-left: initial;
+    grid-auto-columns: calc(33.333333333333336% - 6.66667px);
+    grid-template-columns: repeat(3, calc(33.333333333333336% - 6.66667px));
+    min-height: 641px;
   }
 }
 
 @media (max-width: 991px) {
   .u-section-1 .u-repeater-1 {
-    grid-auto-columns: calc(50% - 5px);
-    grid-template-columns: repeat(2, calc(50% - 5px));
+    grid-auto-columns: calc(50% - 5.0000025px);
+    grid-template-columns: repeat(2, calc(50% - 5.0000025px));
+    min-height: 742px;
   }
 }
 
@@ -100,16 +69,6 @@
   }
 
   .u-section-1 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-container-layout-2 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-container-layout-3 {
     padding-left: 10px;
     padding-right: 10px;
   }
