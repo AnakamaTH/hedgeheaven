@@ -28,7 +28,7 @@
   text-transform: uppercase;
   font-size: 3rem;
   letter-spacing: 1px;
-  margin: 103px auto 60px;
+  margin: 103px auto 60px 117px;
   padding: 10px 41px 10px 40px;
 }
 
@@ -52,6 +52,10 @@
     margin-left: 0;
     margin-right: 0;
   }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -65,11 +69,26 @@
     width: auto;
     margin-top: 32px;
   }
+
+  .u-section-1 .u-btn-1 {
+    font-size: 1.875rem;
+    margin-top: 105px;
+    margin-left: auto;
+    padding-right: 23px;
+    padding-left: 22px;
+  }
 }
 
 @media (max-width: 767px) {
   .u-section-1 .u-text-1 {
     margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-1 {
+    font-size: 1.5rem;
+    margin-top: 117px;
+    padding-right: 7px;
+    padding-left: 6px;
   }
 }
 
@@ -86,6 +105,13 @@
 
   .u-section-1 .u-text-4 {
     margin-top: 19px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    font-size: 1.25rem;
+    margin-top: 112px;
+    margin-left: -1px;
+    margin-right: -1px;
   }
 }.u-section-2 .u-sheet-1 {
   min-height: 278px;
