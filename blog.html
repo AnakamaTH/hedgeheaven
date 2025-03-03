@@ -7,7 +7,12 @@
     <title>HedgeHeaven News</title>
 <script>
     function gdprConfirmed() {
-        return true;
+        return document.cookie.split(';').filter(function(item) {
+            var val = item.trim().split('=');
+            val = decodeURIComponent(val[1] || '');
+            try { val = JSON.parse(val); } catch (e) { val = {}; }
+            return val && val.analytics;
+        }).length;
     }
     if (gdprConfirmed()) {
     document.write("\
@@ -32,6 +37,7 @@
     <meta property="og:url" content="tminec.github.io/hedgeheaven">
     <link rel="canonical" href="hedgeheaven, hedge, sonic, sonic the hedgehog, hedgehog">
     <link rel="icon" href="images/image.png">
+    
     
     
     
@@ -87,7 +93,7 @@
           <div class="u-list-control"></div>
           <div class="u-repeater u-repeater-1"><!--blog_post-->
             <div class="u-blog-post u-container-style u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-1"><!--blog_post_header-->
+              <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-1"><!--blog_post_header-->
                 <h2 class="u-blog-control u-text u-text-1">
                   <a class="u-post-header-link" href="blog/end-of-the-hedgeworld-dramas.html">End of the HedgeWorld dramas.</a>
                 </h2><!--/blog_post_header-->
@@ -99,6 +105,7 @@
                 <div class="u-blog-control u-metadata u-metadata-1"><!--blog_post_metadata_date-->
                   <span class="u-meta-date u-meta-icon">02 Mar 2025</span><!--/blog_post_metadata_date-->
                 </div><!--/blog_post_metadata-->
+                <div class="u-widget u-widget-1">[np_widget]{"type":"comments","title":"","posts-count":"5"}[/np_widget]</div>
               </div>
             </div><!--/blog_post-->
           </div>
@@ -109,8 +116,186 @@
     
     
     
+    
     <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="footer"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">© AnakamaTheHedgehog&nbsp;2025&nbsp;</p>
-      </div></footer>
+      </div></footer><section class="u-align-center u-clearfix u-container-align-center u-cookies-consent u-grey-80 u-cookies-consent" id="gdpr">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-43 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h3 class="u-text u-text-default u-text-1">Cookies &amp; Privacy</h3>
+                  <p class="u-text u-text-default u-text-2">This website uses cookies to ensure you get the best experience on our website.</p>
+                  <div class="custom-expanded u-cookie-preferences u-cookie-preferences-1">
+                    <label class="u-form-control-hidden u-label"></label>
+                    <div class="u-form-checkbox-group-wrapper">
+                      <div class="u-input-row">
+                        <input id="field-cookie-necessary" disabled="" type="checkbox" name="cookie-preferences" value="necessary" class="u-field-input" checked="checked">
+                        <label class="u-field-label" for="field-cookie-necessary">Strictly Necessary</label>
+                      </div>
+                      <div class="u-input-row">
+                        <input id="field-cookie-analytics" checked="checked" type="checkbox" name="cookie-preferences" value="analytics" class="u-field-input">
+                        <label class="u-field-label" for="field-cookie-analytics">Analytics</label>
+                      </div>
+                      <div class="u-input-row">
+                        <input id="field-cookie-statistics" checked="checked" type="checkbox" name="cookie-preferences" value="statistics" class="u-field-input">
+                        <label class="u-field-label" for="field-cookie-statistics">Statistics</label>
+                      </div>
+                      <div class="u-input-row">
+                        <input id="field-cookie-form-submissions" checked="checked" type="checkbox" name="cookie-preferences" value="submissions" class="u-field-input">
+                        <label class="u-field-label" for="field-cookie-form-submissions">Form Submissions</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-right-cell u-size-17 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <a href="" class="u-btn u-button-decline u-button-style u-btn-1">Decline</a>
+                  <a href="###" class="u-btn u-button-confirm u-button-style u-palette-1-base u-btn-2">Confirm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <style> .u-cookies-consent {
+  background-image: none;
+}
+
+.u-cookies-consent .u-sheet-1 {
+  min-height: 292px;
+}
+
+.u-cookies-consent .u-layout-wrap-1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.u-cookies-consent .u-layout-cell-1 {
+  min-height: 203px;
+}
+
+.u-cookies-consent .u-container-layout-1 {
+  padding: 0 60px;
+}
+
+.u-cookies-consent .u-text-1 {
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.u-cookies-consent .u-text-2 {
+  margin: 8px 20px 0 0;
+}
+
+.u-cookies-consent .u-cookie-preferences-1 {
+  width: 697px;
+  margin: 21px 0 0;
+}
+
+.u-cookies-consent .u-layout-cell-2 {
+  min-height: 203px;
+}
+
+.u-cookies-consent .u-container-layout-2 {
+  padding: 30px 29px;
+}
+
+.u-cookies-consent .u-btn-1 {
+  margin: 51px 0 0 auto;
+}
+
+.u-cookies-consent .u-btn-2 {
+  margin: -42px auto 0 0;
+}
+
+@media (max-width: 1199px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 131px;
+  }
+
+  .u-cookies-consent .u-layout-cell-1 {
+    min-height: 167px;
+  }
+
+  .u-cookies-consent .u-text-1 {
+    margin-right: 0;
+  }
+
+  .u-cookies-consent .u-text-2 {
+    margin-right: 0;
+  }
+
+  .u-cookies-consent .u-cookie-preferences-1 {
+    width: 554px;
+  }
+
+  .u-cookies-consent .u-layout-cell-2 {
+    min-height: 167px;
+  }
+
+  .u-cookies-consent .u-btn-1 {
+    margin-right: 0;
+  }
+
+  .u-cookies-consent .u-btn-2 {
+    margin-top: -42px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 106px;
+  }
+
+  .u-cookies-consent .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-cookies-consent .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .u-cookies-consent .u-cookie-preferences-1 {
+    width: 456px;
+  }
+
+  .u-cookies-consent .u-layout-cell-2 {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 225px;
+  }
+
+  .u-cookies-consent .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .u-cookies-consent .u-container-layout-2 {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-cookies-consent .u-sheet-1 {
+    min-height: 121px;
+  }
+
+  .u-cookies-consent .u-cookie-preferences-1 {
+    width: 320px;
+  }
+}</style></section>
+    <span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 20px; bottom: 20px; padding: 15px" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-85 u-palette-1-base" data-href="#"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg><svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg></span>
   
 </body></html>
