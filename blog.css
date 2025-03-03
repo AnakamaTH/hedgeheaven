@@ -39,12 +39,6 @@
   margin: 30px 7px 0;
 }
 
-.u-section-1 .u-widget-1 {
-  min-height: 63px;
-  height: auto;
-  margin: 30px 170px 0 0;
-}
-
 @media (max-width: 1199px) {
   .u-section-1 .u-repeater-1 {
     grid-auto-columns: calc(33.333333333333336% - 6.66667px);
@@ -67,10 +61,6 @@
   }
 
   .u-section-1 .u-metadata-1 {
-    margin-right: 0;
-  }
-
-  .u-section-1 .u-widget-1 {
     margin-right: 0;
   }
 }
