@@ -1,0 +1,36 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 786px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 35px auto 0 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 35px 25px 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: solid;
+  font-size: 1.5rem;
+  font-family: "ADLaM Display";
+  margin: 25px auto 0 0;
+  padding: 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 415px;
+  margin: 25px 42px 60px -15px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
