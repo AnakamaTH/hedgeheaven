@@ -15,13 +15,13 @@
   border-style: solid;
   font-size: 1.5rem;
   font-family: "ADLaM Display";
-  margin: 26px auto 0 0;
+  margin: 25px auto 0 0;
   padding: 0;
 }
 
 .u-section-1 .u-form-1 {
   height: 415px;
-  margin: 24px 42px 19px -15px;
+  margin: 25px 42px 60px -15px;
 }
 
 @media (max-width: 1199px) {
